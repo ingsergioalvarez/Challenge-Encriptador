@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Codificacion</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="cargarEmojis()">
+
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="imagenes/top1.jpg">
+        <section class="titulo">
+            <h1>Codificada con emojis</h1>
+        </section>
+
+    </header>
+    <main class="fondo">
+        <div class="configuracion">
+            <section>
+                <form class="panel">
+                    <h1>Panel de configuracion</h1>
+                    <div>
+                        <ul class="instrucciones">
+                            <h1>Instrucciones</h1>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">Asigna a cada letra un emoticon
+                                diferente</li>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">En automatico cambiara su valor
+                                en el
+                                cuadro de texto por su valor unicode</li>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">Este valor permitira al
+                                codificador
+                                generar tu mensaje secreto </li>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">Valida que no existan emoticones
+                                duplicados</li>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">Puedes seleccionar boton
+                                aleatorio</li>
+                            <li><img src="imagenes/emojiLentes.png" class="gif-llamas">No olcides anotar tu codigo para
+                                desencriptar tu mensaje</li>
+                        </ul>
+                    </div>
+                    <div class="letras"></div>
+                    <div class="botones1">
+                        <button type="button" onclick="validarEmojisUnicos();" class="boton">Verificar
+                            duplicados</button>
+
+                        <button type="button" onclick="seleccionarAleatoriamente();" class="boton">Aleatorio</button>
+                        <button type="button" onclick="guardarConfiguracion();" class="boton">Guardar
+                            configuración</button>
+                        <button type="button" onclick="cargarConfiguracion();" class="boton">Cargar
+                            configuración</button>
+                    </div>
+
+
+                </form>
+
+            </section>
+        </div>
+
+        <div class="codificador">
+
+            <form class="descifrado">
+                <div>
+                    <p>Coloca tu texto a codificar</p>
+                    <button type="button" onclick="pegarDesdePortapapeles();" class="boton">Pegar texto</button>
+                </div>
+                <textarea cols="70" rows="10" id="entrada" class="input-padron" required></textarea>
+                <div class="botonesCifrado">
+                    <button type="button" onclick="reemplazarNumeros();" value="Codificar"
+                        class="boton">Codificar</button>
+                    <!-- Cambiado el tipo de submit a button y añadido el evento onclick -->
+                    <button type="button" onclick="descodificarNumeros();" class="boton">Descodificar</button>
+
+                </div>
+                <div>
+                    <p>Texto codificado/descodificado</p>
+                    <button type="button" onclick="copiarAlPortapapeles();" class="boton">Copiar texto</button>
+                </div>
+                <textarea cols="70" rows="10" id="salida" class="input-padron"></textarea>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

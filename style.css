@@ -1,0 +1,205 @@
+body {
+    font-family: 'Courgette', cursive;
+    height: 100%;
+    width: 100%;
+
+}
+.header{
+    background: linear-gradient(45deg,#21a3fa, #a10f8e);
+    
+    align-content: center;
+}
+.header ul,ul li{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 10%;
+    
+}
+
+
+.header a {
+    text-decoration: none; /* Elimina el subrayado predeterminado del hipervínculo */
+    color: antiquewhite; /* Define el color del enlace */
+}
+.header img{
+    
+    width: 100%;
+    
+}
+.titulo {
+    width: 100%;
+    margin: 0;
+    position: absolute; /* Añadido para posicionar absolutamente el h1 dentro del .header */
+    top: 25%; /* Lleva el h1 al centro verticalmente */
+    left: 50%; /* Lleva el h1 al centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra perfectamente el h1 */
+    z-index: 1; /* Asegura que el h1 esté sobre la imagen */
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+.fondo {
+    
+    display: flex;
+    background: linear-gradient(45deg,#21a3fa, #a10f8e);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.codificador {
+    width: 50%;
+    padding-left: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    
+
+    
+}
+.codificador h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botones{
+    width: 90%;
+    text-align: center;
+}
+.boton{
+    border-radius: 10px;
+    
+    background: linear-gradient(10deg, #21a3fa, #a10f8e);
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+      
+    
+}
+.input-padron{
+    width: 90%;
+    height: 300px;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+}
+.configuracion {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.panel {
+    width: 90%;
+    
+    background: rgba(255, 255, 255, 0.4);
+    margin: 5%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.panel h1{
+    
+    color: rgb(14, 13, 13);
+    font-size: 30px;padding: 10px 0 10px 20px;
+}
+.instrucciones{
+    background: rgba(255, 255, 255, 0.7);
+    width: 80%;
+    margin-left:  10%;
+    border-radius: 30px;    
+}
+
+ul h1, ul li{
+    color: rgb(8, 8, 8);
+    
+    padding: 8px 0 8px 25px;
+    font-size: 20px;
+
+}
+
+.gif-llamas{
+    width: 25px;
+}
+ 
+
+
+.letras {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; /* Alinea los bloques de letra en el centro */
+}
+.descifrado div{
+    background: rgba(255, 255, 255, .7);
+    width: 90%;
+    padding: 2%;
+    text-align: center;
+    border: 1px;
+    margin: 5% 1px 0 1px;
+    border-radius:25px 25px 0 0;
+}
+/* Estilo para cada bloque de letra */
+.bloque-letra {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Estira los elementos verticalmente */
+    border: 1px solid #ccc;
+    padding: 2%;
+    
+    
+    width: 45%; /* Ancho ajustado para dos columnas */
+    box-sizing: border-box;
+    margin: 10px; 
+    
+}
+
+
+.bloque-letra p {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+}
+
+
+.bloque-letra select {
+    padding: 2px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-left: 10px;
+    width: 30%;
+}
+
+form p{
+    margin-top: 5%;
+}
+
+
+.bloque-letra input {
+    padding: 3px;
+    font-size: 20px;
+    width: 40%;
+}
+div .botonesCifrado{
+    background: rgba(255, 255, 255, .7);
+    width: 90%;
+    padding: 2%;
+    text-align: center;
+    border: 1px;
+    margin: 5% 1px 0 1px;
+    border-radius:25px;
+
+}
+.botones1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
